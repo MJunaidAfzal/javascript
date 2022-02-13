@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>Array loop</title>
+    </head>
+    <body>
+        <p id="foreach"></p>
+        <p id="Map"></p>
+        <p id="filter"></p>
+        <script>
+            var number = ["karachi","lahore","multan","quetta"];
+            var city1 = "";
+            number.forEach(numbers);
+            function numbers(value,index,array){
+                city1 += array + "<br>" ;
+                document.getElementById('foreach').innerHTML = city1; 
+            }
+            var city2 = "";
+            number.map(numbers1);
+            function numbers1(value,index,array){
+                city2 += index + "<br>";
+                document.getElementById('Map').innerHTML = city2;
+            }
+            var city3 = "";
+            number.filter(numbers2);
+            function numbers2(value,index,array){
+                city3 +=  value+ "<br>" ;
+                document.getElementById('filter').innerHTML = city3;
+            }
+        </script>
+    </body>
+</html>

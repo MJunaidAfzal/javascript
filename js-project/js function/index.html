@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <title>js function</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <div class="div1">
+        <h1>JS MATH.MAX</h1>
+        <p id="mathmax"></p>
+        </div>
+        <div class="div2">
+        <h1>JS MATH.MIN</h1>
+        <p id="mathmin"></p>
+        </div>
+        <div class="div3">
+        <h1>JS REDUCE</h1>
+        <p id="reduce"></p>
+        </div>
+        <div class="div4">
+        <h1>JS ARRAY REDUCE</h1>
+        <p id="arrayreduce"></p>
+        </div>
+        <script>
+            var numbers = [20,30,40,50,50]
+            document.getElementById('mathmax').innerHTML=arraymax(numbers);
+            function arraymax(arr){
+                return Math.max.apply(0,arr)
+            }
+            document.getElementById('mathmin').innerHTML=arraymin(numbers);
+            function arraymin(css){
+                return Math.min.apply(0,css)
+            }
+            let sum = numbers.reduce(myfunction);
+            document.getElementById('reduce').innerHTML=+sum;
+            function myfunction(total,value){
+                return total + value;
+            }
+            let js = numbers.reduce(myfunction,200);
+            document.getElementById('arrayreduce').innerHTML=+js;
+            function myfunction(total,value){
+                return total + value;
+            }
+        </script>
+    </body>
+</html>

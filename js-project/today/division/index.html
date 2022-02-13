@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>divide</title>
+    </head>
+    <body>
+        <p id="normalway"></p>
+        <p id="divide"></p>
+        <p id="array"></p>
+        <p id="arraydivide"></p>
+
+        <script>
+            var x = 4;
+            var y = 5;
+
+            document.getElementById('normalway').innerHTML="the value of x is "+x+"<br> the value of y is "+y;
+
+            var divide = x/y;
+            document.getElementById('divide').innerHTML="the value of divide is "+divide;
+
+            var arr = [3,4,5];
+            document.getElementById('array').innerHTML="the value of 0 index is "+arr[0]+" <br> the value of 1 index is "+arr[1]+" <br> the value of 2 index is "+arr[2];
+
+            var divide = arr[0]/ arr[1];
+            document.getElementById('arraydivide').innerHTML="the value of array divide is "+divide;
+        </script>
+
+    </body>
+</html>

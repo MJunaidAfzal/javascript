@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>addition</title>
+    </head>
+    <body>
+        <p id="normalway"></p>
+        <p id="addition"></p>
+        <p id="array"></p>
+        <p id="arrayaddition"></p>
+
+        <script>
+            var x = 4;
+            var y = 5;
+
+            document.getElementById('normalway').innerHTML="the value of x is "+x+"<br> the value of y is "+y;
+
+            var addition = x+y;
+            document.getElementById('addition').innerHTML="the value of addition is "+addition;
+
+            var arr = [3,4,5];
+            document.getElementById('array').innerHTML="the value of 0 index is "+arr[0]+" <br> the value of 1 index is "+arr[1]+" <br> the value of 2 index is "+arr[2];
+
+            var addition = arr[0]+ arr[1];
+            document.getElementById('arrayaddition').innerHTML="the value of array addition is "+addition;
+        </script>
+
+    </body>
+</html>

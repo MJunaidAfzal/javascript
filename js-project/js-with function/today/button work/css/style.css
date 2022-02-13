@@ -1,0 +1,25 @@
+div{
+    border: skyblue 10px groove;
+    margin-left: 500px;
+    text-align: center;
+    margin-right: 500px;
+    height: auto;
+    margin-top: 50px;
+    background-color: wheat;
+    border-radius: 10px;
+    font-family: sans-serif;
+}
+h1{
+    font-size: 40px;
+    font-family:fantasy;
+    color:darkred ;
+}
+button{
+    padding: 7px;
+    border: dashed darkred 5px;
+    background-color: gold;
+    font-family: cursive;
+}
+body{
+    background-color: lightgreen;
+}

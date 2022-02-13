@@ -1,0 +1,81 @@
+<html>
+    <head>
+        <title>calculator</title>
+        <link rel="stylesheet" href="css/style.css">
+        <style>
+            
+        </style>
+    </head>
+    <body>
+        <div class="body">
+          
+                <h1>CALCULATOR</h1>
+                <table>
+                <div class="tableborder">
+                  <p id="table"></p>
+
+                </div>  <br><br>
+                <tr>
+                    <td> <button type="submit">7</td></button>
+                    <td> <button type="submit">8</td></button>
+                    <td> <button type="submit">9</td></button>
+                    <td> <button type="submit" onclick="myfunction()" value="table">+</td></button>
+                </tr>
+                <tr>
+                    <td> <button type="submit">4</td></button>
+                    <td> <button type="submit">5</td></button>
+                    <td> <button type="submit">6</td></button>
+                    <td> <button type="submit"  onclick="myfunction2()" value="table">-</td></button>
+                </tr>
+                <tr>
+                    <td> <button type="submit">1</td></button>
+                    <td> <button type="submit">2</td></button>
+                    <td> <button type="submit">3</td></button>
+                    <td> <button type="submit"  onclick="myfunction3()" value="table">*</td></button>
+                </tr>
+                <tr>
+                    <td> <button type="submit">0</td></button>
+                    <td> <button type="submit">.</td></button>
+                    <td> <button type="submit" onclick="myfunction4()" value="table">/</td></button>
+                    <td> <button type="submit" onclick="myfunction7()">=</button> </td>
+                </tr>
+                 
+                </table>
+                <script>
+                    var x = 2;
+                    var y = 2;
+                    z = x+y;
+                    document.getElementById('table').innerHTML = "the Addition is";
+                    function myfunction(){
+                        document.getElementById('table').innerHTML ="the Addition is  "+ z;
+                    }
+                    var a = 2;
+                    var b = 2;
+                    c = a-b;
+                    document.getElementById('table').innerHTML = "the substract is";
+                    function myfunction2(){
+                        document.getElementById('table').innerHTML ="the substract is  "+ c;
+                    }
+                    var d = 2;
+                    var e = 2;
+                    f = d*e;
+                    document.getElementById('table').innerHTML = "the Multiply is";
+                    function myfunction3(){
+                        document.getElementById('table').innerHTML ="the Multiply is  "+ f;
+                    }
+                    var g = 2;
+                    var h = 2;
+                    i = g/h;
+                    document.getElementById('table').innerHTML = "the Division is";
+                    function myfunction4(){
+                        document.getElementById('table').innerHTML ="the Division is  "+ i;
+                    }
+                    function myfunction7(){
+                        document.getElementById('table').innerHTML = "the types of mathematics";
+                    }
+                    document.getElementById('table').innerHTML =  "the types of mathematics";
+                </script>
+            
+        </div>
+    </body>
+</html>

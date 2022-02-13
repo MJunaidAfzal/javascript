@@ -1,0 +1,36 @@
+table{
+    border: solid 8px black;
+    padding: 10px;
+    background-color: lightyellow;
+    margin-left: 50px;
+}
+button{
+   padding: 30px;
+   display: block;
+   margin-top: 10px;
+   margin-left: 5px;
+}
+input{
+    width: 362px;
+    height: 60px;
+    border: 6px black solid;
+    font-size: 30px;
+    margin-left: 50px;
+}
+h1{
+    font-family: sans-serif;
+    text-align: center;
+}
+div{
+    border: groove 10px lightgreen;
+    padding: 20px;
+    margin-left: 700px;
+    margin-right: 700px;
+    margin-top: 250px;
+    padding-bottom: 50px;
+    background-color:wheat;
+}
+body{
+    background-color:khaki;
+}
+

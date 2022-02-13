@@ -1,0 +1,53 @@
+.div1{
+    border: 10px lightsalmon groove;
+    border-radius: 30px;
+    width: 700px;
+    height: 250px;
+    background-color: lightgoldenrodyellow;
+    text-align: center;
+    padding: 100px;
+}
+h1{
+    font-size: 75px;
+    font-family: sans-serif;
+    color: darkred;
+}
+p{
+    font-size: 50px;
+    font-family: fantasy;
+}
+.div2{
+    border: 10px lightsalmon groove;
+    border-radius: 30px;
+    width: 700px;
+    height: 250px;
+    background-color: lightgoldenrodyellow;
+    text-align: center;
+    padding: 100px;
+    margin-left: 970px;
+    margin-top: -465px;
+}
+.div3{
+    border: 10px lightsalmon groove;
+    border-radius: 30px;
+    width: 700px;
+    height: 250px;
+    background-color: lightgoldenrodyellow;
+    text-align: center;
+    padding: 100px;
+}
+.div4{
+    border: 10px lightsalmon groove;
+    border-radius: 30px;
+    width: 700px;
+    height: 250px;
+    background-color: lightgoldenrodyellow;
+    text-align: center;
+    padding: 100px;
+    margin-left: 970px;
+    margin-top: -465px;
+}
+body{
+    background-color: deepskyblue;
+    margin-top: 80px;
+}

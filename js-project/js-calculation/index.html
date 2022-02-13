@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>calculation</title>
+    </head>
+    <body>
+        <h1>javascript calculation</h1>
+        <p>There are some number calculation and name button</p>
+        <button type="button" onclick="functionwork()">click me!</button>
+        <p id="Clickhere1"></p>
+        <p id="Clickhere2"></p>
+        <p id="Clickhere3"></p>
+        <p id="Clickhere4"></p>
+        <p id="Calculation"></p>
+    </body>
+    <script>
+
+        function functionwork(){
+
+        document.getElementById('Clickhere1').innerHTML="Hello junaid";
+        document.getElementById('Clickhere2').innerHTML="how are you";
+        document.getElementById('Clickhere3').innerHTML="what are you doing?";
+        document.getElementById('Clickhere4').innerHTML="what is your region?";
+    }
+        let x,y,z;
+        x = 10;
+        y = 50;
+        z = x-y;
+        document.getElementById('Calculation').innerHTML="the value of z is"+z+".";
+    </script>
+</html>

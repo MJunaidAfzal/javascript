@@ -1,0 +1,67 @@
+
+<html>
+    <head>
+        <title>array program</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <div>
+        <h1>Array Function</h1>
+        <p id="pusharray"></p>
+        <button type="button" onclick="pusharray()" value = "pusharray">push button</button><br><br><br>
+        <p id="sortarray"></p>
+        <button type="button" onclick="sortarray()" value="sortarray">sort button</button><br><br><br>
+        <p id="joinarray"></p>
+        <button type="button" onclick="joinarray()" value="joinarray">join button</button><br><br><br>
+        <p id="poparray"></p>
+        <button type="button" onclick="poparray()" value="poparray">pop button</button><br><br><br>
+        <p id="shiftarray"></p>
+        <button type="button" onclick="shiftarray()" value="shiftarray">shift button</button><br><br><br>
+        <p id="fruitarray"></p>
+        <button type="button" onclick="fruitarray()" value="fruitarray">fruits button</button><br><br><br>
+        <p id="unshiftarray"></p>
+        <button type="button" onclick="unshiftarray()" value="unshiftarray">unshift button</button><br><br><br>
+        <p id="lengtharray"></p>
+        <button type="button" onclick="lengtharray()" value="lengtharray">length button</button><br><br><br><br>
+
+
+        <script>
+
+            var fruits = ["banana","apple","mango","peach","orange","kiwi"];
+            document.getElementById('pusharray').innerHTML=fruits;
+            function pusharray(){
+                fruits.push('water melon');
+                document.getElementById('pusharray').innerHTML= fruits;
+            }
+            function sortarray(){
+                fruits.sort();
+                document.getElementById('sortarray').innerHTML= fruits;
+            }
+            function joinarray(){
+                document.getElementById('joinarray').innerHTML=fruits.join(" & ")
+            }
+            function poparray(){
+                fruits.pop();
+                document.getElementById('poparray').innerHTML=fruits;
+            }
+            function shiftarray(){
+                fruits.shift();
+                document.getElementById('shiftarray').innerHTML=fruits;
+            }
+            function fruitarray(){
+                fruits [0]="pine appale";
+                document.getElementById('fruitarray').innerHTML=fruits;
+            }
+            function unshiftarray(){
+                fruits.unshift("pineapple");
+                document.getElementById('unshiftarray').innerHTML=fruits;
+            }
+            function lengtharray(){
+                fruits=fruits.length;
+                document.getElementById('lengtharray').innerHTML=fruits;
+            }
+
+        </script>
+        </div>
+    </body>
+</html>

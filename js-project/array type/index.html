@@ -1,0 +1,82 @@
+<html>
+    <head>
+        <title>array type</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        
+        <h1>Array function</h1>
+        <div class="div1">
+        <p id="delete"></p>
+        <button type="button" onclick="deletearray()" value="delete">delete button</button><br><br><br><br>
+        </div>
+        <div class="div2">
+        <p id="splice"></p>
+        <button type="button" onclick="splicearray()" value="splice">splice button</button><br><br><br><br>
+        </div>
+        <div class="div3">
+        <p id="concat"></p>
+        <button type="button" onclick="concatearray()" value="concat">concat button</button><br><br><br><br>
+       </div>
+       <div class="div2">
+        <p id="slice"></p>
+        <button type="button" onclick="slicearray()" value="slice">slice button</button><br><br><br><br>
+       </div>
+       <div class="div3">
+        <p id="reverse"></p>
+        <button type="button" onclick="reversearray()" value="reverse">reverse button</button><br><br><br><br>
+       </div>
+       <div class="div2">
+        <p id="alpha"></p>
+        <button type="button" onclick="alphabaticallyarray()" value="alphabatically">alphabatically button</button><br><br><br><br>
+        </div>
+        <div class="div3">
+        <p id="numer"></p>
+        <button type="button" onclick="numericallyarray()" value="numerically">numerically button</button><br><br><br><br>
+        </div>
+        <div class="div2"> 
+        <p id="Random"></p>
+        <button type="button" onclick="randomArray()" value="randomArray">Random Button</button> <br><br><br><br>
+        </div>  
+        <script>
+            var cars = ["BMW","meclarein","corola","honda","boghati"];
+            var city = ["karachi","lahore","islamabad"];
+            document.getElementById('delete').innerHTML= cars;
+            function deletearray(){
+                delete cars[2];
+                document.getElementById('delete').innerHTML= cars;
+            }
+            function splicearray(){
+                 cars.splice(0,2);
+                 document.getElementById('splice').innerHTML=cars;
+            }
+            function concatearray(){
+                 var allcars =cars.concat(city);
+                 document.getElementById('concat').innerHTML=allcars;
+            }
+            function slicearray(){
+                var allcars=cars.slice(3);
+                document.getElementById('slice').innerHTML=allcars;
+            }
+            function reversearray(){
+                cars.reverse();
+                document.getElementById('reverse').innerHTML=cars;
+            }
+                function alphabaticallyarray(){
+                    cars.sort();
+                    document.getElementById('alpha').innerHTML=cars;
+                }
+            var number =[10,25,42,15,35];
+            function numericallyarray(){
+                number.sort(function(a,b){return a-b})
+                document.getElementById('numer').innerHTML=number;
+            }
+            function randomArray(){
+                number.sort(function (a,b){return 0.5-Math.random()});
+                document.getElementById('Random').innerHTML = number ;
+            }
+        </script>
+        
+
+    </body>
+</html>
